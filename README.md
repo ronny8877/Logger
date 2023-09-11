@@ -1,28 +1,23 @@
 # Logger
-### My Fist programm in Typescript.
+### Why not use Winston?
 ---
-> A simple Logger for my backend applications. cause i am way too lazy to read winston docs.
-> Initial build will add things as i learn more about ts and node in genral.
+> Was too lazy to read the docs and thought this would be a ez in out job 2 min adventure
 
-## Use 
+## Well can do too much that wasn't asked of it 
 ```
-//file index.ts
-import Logger from "./logger";
-const NAMESPACE = "index.ts";
-var obj =
-'{"persons":[{"name":"John","city":"New York"},{"name":"Phil","city":"Ohio"}]}';
-let log: Logger = new Logger(NAMESPACE);
-log.info("Logging in blue", obj);
-log.info("Single arguments");
-log.success("Logging in green", obj);
-log.warn("Logging in blue", obj);
-log.error("Logging in red", obj);
-log.debug("General log", "Success", obj);
-log.info("Hello world");
+init()
+It accepts a bunch of customization like creating logs or color changing ETC
+
+then just use log.success() or error or trace 
+It can write to files as well Might add a DB or cache transport later.|
+
+BUT STILL NOT GONNA USE WINSTTON
+
+
+JUST HAVING FUN HERE
 
 ```
 ### Output
 ---
-> it also genrates log files in root/logs folder
-> output: [09/11/2021 6:46:33 PM] [INFO] [index.ts] Single arguments
+> output: [09/11/2021 6:46:33 PM] [INFO] Single arguments
 
